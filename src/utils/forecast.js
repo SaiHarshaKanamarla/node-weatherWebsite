@@ -9,7 +9,7 @@ const forecast = (lat,long,callback) => {
     }else if(response.body.error){
         callback("Provide a valid location");
     }else{
-    callback(undefined,"current temperature is "+response.body.current.temperature);
+    callback(undefined,"The Current temperature is "+response.body.current.temperature+". The weather is currently "+response.body.current.weather_descriptions[0]);
     }
 })
 
