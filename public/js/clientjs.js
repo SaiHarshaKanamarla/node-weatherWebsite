@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit',(e) =>{
      
     console.log(searchEle.value);
     e.preventDefault(); // This will prevent the default behavior of the form refresh
-    var url = 'http://localhost:3000/weather?location='+searchEle.value;
+    var url = '/weather?location='+searchEle.value;
     if(!searchEle.value){
         messageOne.textContent = "Please enter a Valid city name";
         messageTwo.textContent = "";

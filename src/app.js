@@ -7,6 +7,7 @@ const request = require('request');
 
 
 var app = express(); // var, let, const
+const port = process.env.PORT || 3000;
 
 
 //Define paths for express config
@@ -104,8 +105,8 @@ app.get('/help/*',(req,res)=>{
     });
 })
 
-app.listen(3000,()=>{
-    console.log("server is up in 3000");
+app.listen(port,()=>{
+    console.log("server is up in "+port);
 });
 
 
